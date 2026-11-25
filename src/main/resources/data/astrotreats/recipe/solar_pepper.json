@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:carrot",
+    "minecraft:blaze_powder"
+  ],
+  "result": {
+    "id": "astrotreats:solar_pepper",
+    "count": 2
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "astrotreats",
+	"version": "${version}",
+	"name": "AstroTreats",
+	"description": "Adds cosmic space snacks with special potion effects to Minecraft!",
+	"authors": [
+		"AstroDev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/astrotreats/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.astrotreats.AstroTreats"
+		],
+		"client": [
+			"dev.astrotreats.client.AstroTreatsClient"
+		]
+	},
+	"mixins": [
+		"astrotreats.mixins.json",
+		{
+			"config": "astrotreats.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
